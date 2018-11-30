@@ -18,7 +18,7 @@ int main(){
     int i,a,b;
     cin>>n;
     int segment_tree[2*n];
-    for(i=n;i<=2*n;++i) cin>>segment_tree[i];
+    for(i=n;i<2*n;++i) cin>>segment_tree[i];
 
     for(i=n-1;i>0;--i) segment_tree[i]=segment_tree[2*i]+segment_tree[2*i+1];
 	
