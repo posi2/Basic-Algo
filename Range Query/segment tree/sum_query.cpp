@@ -24,7 +24,7 @@ int main(){
 	
     cout<<"Your segment_tree is\n";
     for(i=1;i<2*n;++i) cout<<segment_tree[i]<<" ";
-    cin>>a>>b;
+    cin>>a>>b; // range work in 0 index
     cout<<"\nsum of range a to b is "<<sum_query(a,b,segment_tree);
     return 0;
 }
