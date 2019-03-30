@@ -11,3 +11,7 @@ Every time you insert, compare the new element with present median in order to d
 In order to construct the median heap for a list of elements, we should first use a linear time algorithm and find the median. Once the median is known, we can simply add elements to the Min-heap and Max-heap based on the median value. Balancing the heaps isn't required because the median will split the input list of elements into equal halves.
 
 If you extract an element you might need to compensate the size change by moving one element from one heap to another. This way you ensure that, at all times, both heaps have the same size or differ by just one element.
+
+**Time Complexity  O(n logn)**
+
+Note: Using priority queue in STL, we implement the function in shorter way.
