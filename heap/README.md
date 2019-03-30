@@ -1,5 +1,5 @@
 ## Heap
-### Calculation Of median using heap
+### Calculation Of Median using Heap
 You need two heaps: one min-heap and one max-heap. Each heap contains about one half of the data. Every element in the min-heap is greater or equal to the median, and every element in the max-heap is less or equal to the median.
 
 When the min-heap contains one more element than the max-heap, the median is in the top of the min-heap. And when the max-heap contains one more element than the min-heap, the median is in the top of the max-heap.
