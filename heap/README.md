@@ -14,4 +14,6 @@ If you extract an element you might need to compensate the size change by moving
 
 **Time Complexity  O(n logn)**
 
+**Space Complexity  O(n)**
+
 Note: Using priority queue in STL, we implement the function in shorter way.
