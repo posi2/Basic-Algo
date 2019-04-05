@@ -1,13 +1,16 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 bool prime(int n){
-    if(n==2||n==3||n==5||n==7) return 1;
-    if(n%2==0||n%3==0||n%5==0||n%7==0||n==1) return 0; 
-        for(int i=5;i<=sqrt(n);){
-            if(n%i==0||n%(i+2)==0) return 0;   // prime number in pair 6n+1, 6n-1 except 2 and 3.
+    if(n<=1) return 0;
+    else if(n==2||n==3) return 1;
+    else if(n%2==0||n%3==0) return 0;
+    else{for(int i=5;i<=sqrt(n);){
+            if(n%i==0||n%(i+2)==0) return 0; // since prime number in pair 6n+1 and 6n-1 except 2 and 3.
             i+=6;
         }
     return 1;
+    }
 }
 
 int main() {
